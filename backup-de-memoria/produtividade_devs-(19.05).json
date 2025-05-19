@@ -1,0 +1,44 @@
+[
+  {
+    "nome": "Victor",
+    "horas": 132,
+    "producoes": 12,
+    "descricao": "Geral -> Fez o Readme, montou o BD lógico, fez a logo e organizou as reuniões.\nFront-end -> Fez a área de Nutrição (3), Home page, Ajuda, Anamnese, Login e Cadastro, fez o Script das páginas (10 - conta como 1 projeto), fez as telas no figma (10 diferentes)"
+  },
+  {
+    "nome": "Kaliel",
+    "horas": 45,
+    "producoes": 3,
+    "descricao": "Back-end - API, dev interno (funcionamento das APIs) e desenvolvimento de funções para segurança"
+  },
+  {
+    "nome": "Alisson",
+    "horas": 35,
+    "producoes": 3,
+    "descricao": "Estudou heidesql, projeto no Xamp, pogresql, projeto do banco de dados físico no site."
+  },
+  {
+    "nome": "Rodrigo",
+    "horas": 20,
+    "producoes": 3,
+    "descricao": "Estudou HTML e CSS (tailwind), faz a tela de treinos, fez as atividades que enviei."
+  },
+  {
+    "nome": "Alexandre",
+    "horas": 15,
+    "producoes": 1,
+    "descricao": "Estudou mySQL, como criar tabelas e listas, acompanhou Alisson durante a produção do BD."
+  },
+  {
+    "nome": "Guilherme",
+    "horas": 10,
+    "producoes": 3,
+    "descricao": "Sem detalhes de estudo e aprofundamento - montou algumas telas no figma no início. Fez a tela de perfil (que precisou ser editada por outro dev). Fez o modelo conceitual do banco de dados. Criou uma alternativa de nome para o site."
+  },
+  {
+    "nome": "Sergio",
+    "horas": 10,
+    "producoes": 1,
+    "descricao": "Front-end -> Sérgio apenas estudou HTML e CSS, \"produziu\" uma tela de login (usando IA) que precisou ser feita do 0 por outro dev."
+  }
+]

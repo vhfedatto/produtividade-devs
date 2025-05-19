@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestão de Produtividade</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Gestão de Produtividade - Equipe</h1>
+    
+    <form id="dev-form">
+      <input type="text" id="nome" placeholder="Nome do Dev" required />
+      <input type="number" id="horas" placeholder="Horas Trabalhadas" required min="0"/>
+      <input type="number" id="producoes" placeholder="Produções Feitas" required min="0"/>
+      <textarea id="descricao" placeholder="Descreva o que foi feito..." rows="3"></textarea>
+      <button type="submit">Adicionar / Atualizar</button>
+    </form>
+
+    <h2>Ranking de Produtividade</h2>
+    <div id="ranking" class="ranking"></div>
+
+    <div class="backup-controls">
+      <button onclick="baixarJSON()">📥 Exportar Dados (JSON)</button>
+      <input type="file" id="importarJSON" accept=".json" style="display:none" />
+      <button onclick="document.getElementById('importarJSON').click()">📤 Importar Dados</button>
+      <button onclick="resetarTudo()">🗂️ New File</button>
+    </div>
+    
+  </div>
+
+  <script src="script/script.js"></script>
+</body>
+</html>
