@@ -81,27 +81,27 @@ atualizarRanking();
 // Exportar dados como JSON
 function baixarJSON() {
   const dataStr = JSON.stringify(devs, null, 2);
-  const blob = new Blob([dataStr], { type: "application/json" });
+  const blob = new Blob([dataStr], {type: "application/json"});
   const url = URL.createObjectURL(blob);
 
   const a = document.createElement("a");
   a.href = url;
   a.download = "produtividade_devs.json";
   document.body.appendChild(a);
-  a.click();
+  a.click(); // força o download
   document.body.removeChild(a);
-  URL.revokeObjectURL(url);
+  URL.revokeObjectURL(url); // limpa a URL criada
 }
 
 // Importar JSON e atualizar localStorage
 document.getElementById("importarJSON").addEventListener("change", function (event) {
-  const file = event.target.files[0];
-  if (!file) return;
+  const file = event.target.files[0]; //Indica quantos arquivos aceita (somente 1)
+  if (!file) return; //se nada é selecionado. Para aqui.
 
-  const reader = new FileReader();
-  reader.onload = function (e) {
-    try {
-      const importedData = JSON.parse(e.target.result);
+  const reader = new FileReader(); //Cria o objeto para ler o conteúdo.
+  reader.onload = function (e) { //abre a função
+    try { 
+      const importedData = JSON.parse(e.target.result); //Pega o conteúdo e transforma em objeto
 
       if (!Array.isArray(importedData)) {
         alert("Formato de arquivo inválido!");
